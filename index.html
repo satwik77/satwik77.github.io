@@ -634,17 +634,28 @@
 
             <!-- <p class="header pt-5">Service</p> -->
             <div class="header-1 pt-5">Service</div>
-            <div class="header-2 pt-1"><font size ="+1"><b> Teaching</b></font></div>
 
-                    <ul>
-                    <li>Fall 2023: Departmental Tutor for <a class="in-text"
-                        href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2023/" target="_blank">Computational Learning Theory </a></li>
-                    <li>Fall 2022: Departmental Tutor for <a class="in-text"
-                        href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2022/" target="_blank">Computational Learning Theory </a></li>
-                    <li>Spring 2018: Teaching assistant for <a class="in-text"
-                        href="" target="_blank"> Neural Networks and Fuzzy Logic </a> </li>
-            
-                    </ul>
+            <div class="header-2 pt-1"><font size="+1"><b> Teaching</b></font></div>
+
+            <ul class="teaching-list">
+                <li>Fall 2023: Departmental Tutor for 
+                    <a class="in-text" href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2023/" target="_blank">
+                        Computational Learning Theory
+                    </a>
+                </li>
+                <li>Fall 2022: Departmental Tutor for 
+                    <a class="in-text" href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2022/" target="_blank">
+                        Computational Learning Theory
+                    </a>
+                </li>
+                <li>Spring 2018: Teaching assistant for 
+                    <a class="in-text" href="" target="_blank">
+                        Neural Networks and Fuzzy Logic
+                    </a>
+                </li>
+            </ul>
+
+
                 <div class="pb-1">
                     <b><font size ="+1">Reviewer</font></b> &nbsp; ICML 2024, 2023 &nbsp; ACL 2023, 2022 &nbsp; Neurips 2023, 2022 &nbsp; ICLR 2022 &nbsp; ACL Rolling Review &nbsp; EMNLP 2022, 2021, 2020 &nbsp; NAACL 2021  <br>
                 
@@ -964,48 +975,67 @@
 
     .talks-section {
     padding-left: 10px;
-}
+    }
 
-.talk-entry {
-    margin-bottom: 10px; /* Space between each talk entry */
-}
+    .talk-entry {
+        margin-bottom: 10px; /* Space between each talk entry */
+    }
 
-.talk-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2px 0; /* Minimal spacing between rows */
-}
+    .talk-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2px 0; /* Minimal spacing between rows */
+    }
 
-.talk-title {
-    font-weight: 500;
-    color: #444;
-    flex: 1;
-    text-align: left;
-}
+    .talk-title {
+        font-weight: 500;
+        color: #444;
+        flex: 1;
+        text-align: left;
+    }
 
-.talk-links {
-    display: inline-flex;
-    gap: 5px; /* Minimal gap between links */
-}
+    .talk-links {
+        display: inline-flex;
+        gap: 5px; /* Minimal gap between links */
+    }
 
-.talk-link {
-    text-decoration: none;
-    color: #003d83;
-    margin: 0;
-}
+    .talk-link {
+        text-decoration: none;
+        color: #003d83;
+        margin: 0;
+    }
 
-.talk-details {
-    color: #666;
-    text-align: left;
-    flex: 1;
-}
+    .talk-details {
+        color: #666;
+        text-align: left;
+        flex: 1;
+    }
 
-.talk-date {
-    color: #888;
-    text-align: right;
-    flex-shrink: 0;
-}
+    .talk-date {
+        color: #888;
+        text-align: right;
+        flex-shrink: 0;
+    }
+
+    .teaching-list {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 20px;  /* Remove extra left indentation */
+    }
+
+    .teaching-list li::before {
+        content: '- '; /* Add dash before each list item */
+        color: #444;   /* Optional: color for the dash */
+        font-weight: bold; /* Optional: make the dash bold */
+        
+    }
+
+    .teaching-list li {
+        
+        margin-bottom: 10px; /* Increase spacing between rows */
+        line-height: 1.25;    /* Improve line spacing for readability */
+    }
+
 
 
 
