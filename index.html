@@ -112,7 +112,7 @@
                     href="https://www.bits-pilani.ac.in/" target="_blank">BITS Pilani</a>, India in 2019. For more
                 details, refer to my <a class="in-text" href="assets/satwik_cv.pdf" target="_blank">CV</a> or drop me an <a class="in-text" href="mailto:satwik55@gmail.com">email</a>.
 
-                <br>
+                <br><br>
                 <div class="publications-header">
                     <span class="header-2">Selected Publications</span>
                     <a id="toggle-button" href="javascript:void(0)" onclick="togglePublications()" class="toggle-link">
@@ -651,6 +651,71 @@
                 </div>
                                 
 
+                <!-- Academic Talks Section -->
+                <div class="header-2 pt-5">Selected Talks</div>
+                <div class="talks-section mt-4">
+                    <div class="talk-entry">
+                        <div class="talk-row">
+                            <span class="talk-title">Language Modelling with Recurrent and State Space Architectures</span>
+                            <div class="talk-links">
+                                <a href="https://www.youtube.com/watch?v=XH7VPs6i6MU" target="_blank" class="talk-link">[Video]</a>
+                                <a href="assets/slides/gtech_rnns.pdf" target="_blank" class="talk-link">[Slides]</a>
+                                
+                            </div>
+                        </div>
+                        <div class="talk-row">
+                            <span class="talk-details">Georgia Tech (SysML Guest Lecture)</span>
+                            <span class="talk-date">11/2024</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="talk-entry">
+                        <div class="talk-row">
+                            <span class="talk-title">Understanding In-context Learning in Transformers by Learning to Learn Discrete Functions</span>
+                            <div class="talk-links">
+                                <a href="assets/slides/incontext.pdf" target="_blank" class="talk-link">[Slides]</a>
+                                
+                            </div>
+                        </div>
+                        <div class="talk-row">
+                            <span class="talk-details">International Conference on Learning Representations (ICLR 2024)</span>
+                            <span class="talk-date">05/2024</span>
+                        </div>
+                    </div> -->
+                    <div class="talk-entry">
+                        <div class="talk-row">
+                            <span class="talk-title">Simplicity Bias in Transformers</span>
+                            <div class="talk-links">
+                                <a href="https://www.youtube.com/watch?v=7xMVKlghF7U" target="_blank" class="talk-link">[Video]</a>
+                                <a href="assets/slides/simplicity.pdf" target="_blank" class="talk-link">[Slides]</a>                            
+                            </div>
+                        </div>
+                        <div class="talk-row">
+                            <span class="talk-details">Formal Languages and Neural Networks (FLaNN) seminar</span>
+                            <span class="talk-date">11/2023</span>
+                        </div>
+                    </div>
+
+                    <div class="talk-entry">
+                        <div class="talk-row">
+                            <!-- <span class="talk-title">On the Computational Capabilities of Transformers</span> -->
+                            <span class="talk-title">On the Ability of Neural Sequence Models
+                            to Recognize Formal Languages</span>
+                            <div class="talk-links">
+                                <a href="assets/slides/compnn.pdf" target="_blank" class="talk-link">[Slides]</a>
+                                <!-- <a href="link_to_video3.mp4" target="_blank" class="talk-link">[Video]</a> -->
+                            </div>
+                        </div>
+                        <div class="talk-row">
+                            <span class="talk-details">Google DeepMind NLP reading group</span>
+                            <span class="talk-date">03/2022</span>
+                        </div>
+                        <div class="talk-row">
+                            <span class="talk-details">MALL Lab at Indian Institute of Science</span>
+                            <span class="talk-date">12/2020</span>
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -896,7 +961,52 @@
     .highlighted-tag i {
         font-size: 0.85em;  /* Reduce icon size to match text */
     }
-    
+
+    .talks-section {
+    padding-left: 10px;
+}
+
+.talk-entry {
+    margin-bottom: 10px; /* Space between each talk entry */
+}
+
+.talk-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0; /* Minimal spacing between rows */
+}
+
+.talk-title {
+    font-weight: 500;
+    color: #444;
+    flex: 1;
+    text-align: left;
+}
+
+.talk-links {
+    display: inline-flex;
+    gap: 5px; /* Minimal gap between links */
+}
+
+.talk-link {
+    text-decoration: none;
+    color: #003d83;
+    margin: 0;
+}
+
+.talk-details {
+    color: #666;
+    text-align: left;
+    flex: 1;
+}
+
+.talk-date {
+    color: #888;
+    text-align: right;
+    flex-shrink: 0;
+}
+
 
 
 
