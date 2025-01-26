@@ -270,7 +270,7 @@
                      <!-- <b></b> <br> -->
                      <span class="papertitle"><a href="https://arxiv.org/abs/2410.02140" target="_blank">A Formal Framework for Understanding Length Generalization in Transformers</a></span><br>
                      Xinting Huang, Andy Yang, <span class="thisauthor">Satwik Bhattamishra</span>, Yash Sarrof, Andreas Krebs, Hattie Zhou, Preetum Nakkiran, Michael Hahn<br>
-                     <b>Preprint 2024 </b> <br>
+                     <b>ICLR 2025 </b> <br>
                      <!-- <b>Robustness of Few-shot Learning workshop at Neurips'23</b> <br> -->
                     
                      <a class="tag" href="https://arxiv.org/pdf/2410.02140" target="_blank">pdf</a>
@@ -650,21 +650,51 @@
             <div class="header-2 pt-1"><font size="+1"><b> Teaching</b></font></div>
 
             <ul class="teaching-list">
-                <li>Fall 2023: Departmental Tutor for 
+
+                <li>
+                    <span class="left-part">
+                      Departmental Tutor for 
+                      <a class="in-text"
+                         href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2023/"
+                         target="_blank">
+                        Computational Learning Theory</a>, University of Oxford
+                    </span>
+                    <span class="right-part">Fall 2023</span>
+                  </li>
+                
+                  <li>
+                    <span class="left-part">
+                      Departmental Tutor for 
+                      <a class="in-text"
+                         href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2022/"
+                         target="_blank">
+                        Computational Learning Theory</a>, University of Oxford
+                    </span>
+                    <span class="right-part">Fall 2022</span>
+                  </li>
+                
+                  <li>
+                    <span class="left-part">
+                      Teaching assistant for 
+                      <a class="in-text" href="" target="_blank">
+                        Neural Networks and Fuzzy Logic</a>, BITS Pilani
+                    </span>
+                    <span class="right-part">Spring 2018</span>
+                  </li>
+
+
+                <!-- <li>Fall 2023: Departmental Tutor for 
                     <a class="in-text" href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2023/" target="_blank">
-                        Computational Learning Theory
-                    </a>, University of Oxford
+                        Computational Learning Theory</a>, University of Oxford
                 </li>
                 <li>Fall 2022: Departmental Tutor for 
                     <a class="in-text" href="https://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-MT2022/" target="_blank">
-                        Computational Learning Theory
-                    </a>, University of Oxford
+                        Computational Learning Theory</a>, University of Oxford
                 </li>
                 <li>Spring 2018: Teaching assistant for 
                     <a class="in-text" href="" target="_blank">
-                        Neural Networks and Fuzzy Logic
-                    </a>, BITS Pilani
-                </li>
+                        Neural Networks and Fuzzy Logic</a>, BITS Pilani
+                </li> -->
             </ul>
 
 
@@ -1041,22 +1071,32 @@
     }
 
     .teaching-list {
-    list-style: none; /* Remove default bullet points */
-    padding-left: 20px;  /* Remove extra left indentation */
+        list-style: none; /* Remove default bullet points */
+        padding-left: 20px;  /* Remove extra left indentation */
     }
 
     .teaching-list li::before {
-        content: '- '; /* Add dash before each list item */
-        color: #444;   /* Optional: color for the dash */
-        font-weight: bold; /* Optional: make the dash bold */
-        
+        content: ' '; /* Add dash before each list item */
     }
 
+    
     .teaching-list li {
-        
-        margin-bottom: 10px; /* Increase spacing between rows */
-        line-height: 1.25;    /* Improve line spacing for readability */
+        display: flex;                   /* enable Flexbox on each list item */
+        justify-content: space-between;  /* left-part on the left, right-part on the right */
+        align-items: baseline;           /* optional: aligns text nicely along baseline */
+        margin-bottom: 0.3rem;           /* optional: spacing between rows */
     }
+    .left-part {
+  /* e.g., if you want to ensure wrapping or specific font */
+  flex: 1;   /* ensures it takes remaining space if needed */
+    }
+
+.right-part {
+  white-space: nowrap;
+  margin-left: 1rem; /* small gap before the right text if needed */
+}
+
+
 
 
 
