@@ -1,0 +1,8 @@
+# build output
+_site/
+# local Bundler install path, if you ever use `bundle install --path`
+vendor/bundle/
+# IDE/editor junk
+.DS_Store
+.idea/
+.vscode/
