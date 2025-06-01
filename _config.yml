@@ -1,0 +1,10 @@
+title: "Satwik"          # site-wide label
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  # uncomment the next line if you want GitHub-style soft wraps
+  # hard_wrap: true
+theme: jekyll-theme-minimal
+permalink: /blog/:title/
+url: "https://satwik77.github.io"    # full URL with no trailing slash
+baseurl: ""                            # leave empty for a user / organisation site
