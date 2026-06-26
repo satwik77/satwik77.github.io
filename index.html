@@ -69,12 +69,14 @@
                 <p class="name"><span style="font-weight: 700;">Satwik</span> Bhattamishra</p>
                 <img lsrc="images/profile-a.jpeg" class="profilepic mt-3 rounded shadow mb-3">
                 <!-- <img class="img-fluid z-depth-1 rounded mt-3 mb-2 ml-2" src="images/profile-3k.jpeg"> -->
-                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/satwik_cv.pdf"><i class="had fas fa-file-alt"></i>&nbsp; resume</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?hl=en&user=_nNw6yEAAAAJ"><i class="ai ai-google-scholar ai-1x"></i>&nbsp; scholar</a></div>
-                <div class=""><a class="menulink" target="_blank" href="mailto:satwik55@gmail.com"><i class="fas fa-envelope"></i>&nbsp; email</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://github.com/satwik77"><i class="had fab fa-github"></i>&nbsp; github</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://twitter.com/satwik1729"><i class="fab fa-twitter"></i>&nbsp; twitter</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/satwik77/"><i class="fab fa-linkedin-in"></i>&nbsp; linkedin</a></div>
+                <div class="profile-links">
+                    <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/satwik_cv.pdf"><i class="had fas fa-file-alt"></i>&nbsp; resume</a></div>
+                    <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?hl=en&user=_nNw6yEAAAAJ"><i class="ai ai-google-scholar ai-1x"></i>&nbsp; scholar</a></div>
+                    <div class=""><a class="menulink" target="_blank" href="mailto:satwik55@gmail.com"><i class="fas fa-envelope"></i>&nbsp; email</a></div>
+                    <div class=""><a class="menulink" target="_blank" href="https://github.com/satwik77"><i class="had fab fa-github"></i>&nbsp; github</a></div>
+                    <div class=""><a class="menulink" target="_blank" href="https://twitter.com/satwik1729"><i class="fab fa-twitter"></i>&nbsp; twitter</a></div>
+                    <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/satwik77/"><i class="fab fa-linkedin-in"></i>&nbsp; linkedin</a></div>
+                </div>
                 <!-- <div class=""><a class="menulink" target="_blank" href="https://www.kaggle.com/gauss77"><i class="fab fa-kaggle"></i>&nbsp; kaggle</a></div> -->
                 <!-- <div class=""><a class="menulink" target="_blank" href="https://stats.stackexchange.com/users/122293/satwik-bhattamishra?tab=profile"><i class="fa fa-stack-exchange" aria-hidden="true"></i>&nbsp; stackexchange</a></div> -->
                 
@@ -1262,6 +1264,148 @@
         /* border-radius: 10px; */
     }    
 
+    }
+
+    @media only screen and (max-width: 767px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .allstuffp {
+        max-width: 640px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .allstuff > .col-md-4 {
+        padding-top: 30px !important;
+        text-align: center;
+    }
+
+    .allstuff > .col-md-8 {
+        padding-top: 24px !important;
+    }
+
+    .fixed-posi {
+        align-items: center;
+        display: block;
+        position: static;
+        text-align: center;
+    }
+
+    .fixed-posi .name {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .profilepic {
+        display: block;
+        max-width: 210px;
+        width: 210px !important;
+        margin: 0 auto 18px !important;
+        padding: 0 !important;
+    }
+
+    .profile-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .profile-links > div {
+        display: inline-flex;
+        margin: 0 5px 8px;
+        padding: 0 !important;
+    }
+
+    .fixed-posi .menur {
+        padding-top: 0 !important;
+    }
+
+    .fixed-posi .menulink {
+        align-items: center;
+        background: #fbf9f3;
+        border: 1px solid #ded5c5;
+        border-radius: 9px;
+        color: #5f574b;
+        display: inline-flex;
+        font-size: 0;
+        height: 38px;
+        justify-content: center;
+        width: 38px;
+    }
+
+    .fixed-posi .menulink i,
+    .fixed-posi .menulink .ai {
+        color: #003d83;
+        font-size: 1.02rem;
+        line-height: 1;
+        margin: 0;
+        width: auto;
+    }
+
+    .top-nav {
+        gap: 18px;
+        justify-content: center;
+        margin: 6px 0 28px;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .about.text-justify,
+    .about p {
+        text-align: left !important;
+    }
+
+    .publications-header {
+        margin-top: 44px;
+    }
+
+    .paper {
+        border-left: 0;
+    }
+
+    .teaching-list {
+        padding-left: 0;
+    }
+
+    .teaching-list li {
+        align-items: flex-start;
+        display: block;
+        margin-bottom: 0.7rem;
+    }
+
+    .right-part {
+        color: #888;
+        display: block;
+        margin-left: 0;
+        margin-top: 2px;
+    }
+
+    .talks-section {
+        padding-left: 0;
+    }
+
+    .talk-row {
+        align-items: flex-start;
+        display: block;
+        margin: 4px 0;
+    }
+
+    .talk-links {
+        margin-top: 3px;
+    }
+
+    .talk-date {
+        display: block;
+        text-align: left;
+    }
+
+    .row.text-center.py-5 {
+        padding-top: 2rem !important;
+    }
     }
     
 </style>
