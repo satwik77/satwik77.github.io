@@ -9,4 +9,4 @@ description: "A tutorial showing how some concept classes can be learnable with 
 ---
 
 This technical writing is available as a PDF:
-[Computational Hardness of Querying](/assets/papers/comp-hard-query.pdf).
+[Computational Hardness of Querying](/writings/comp-hard-query.pdf).
